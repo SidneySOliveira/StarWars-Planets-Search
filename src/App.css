@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media ( prefers-reduced-motion : no-preference ) {
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .SearchByName {
+  align-items: center;
+  display: ;
+} */
+
+.App-header {
+  align-items: center;
+  background-color: black;
+  background-image: url('../projectIntro.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  min-width: 100px;
+  /* max-width: max; */
+  height: 300px;
+  gap: 1px;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 10vh;
+}
+
+@keyframes App-logo-spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  border-color: black;
+  border-radius: 6px;
+  padding: 13px 20px;
+}
+
+
+.background-filter {
+  align-items: center;
+  background-color: rgba(6, 6, 6, 0.800);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  min-height: auto;
+  padding: 10px;
+  width: auto;
+  height: max-content;
+  border: #45a049;
+}
+
+input[type=text], select {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 14px 10px 14px 20px;
+  margin: 1px 4px 1px 4px;
+  display: inline;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 25%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 10px;
+  margin: 1px 4px;
+  border: 1px solid rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=number] {
+  width: 30%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 10px;
+  margin: 1px 4px;
+  border: 1px solid rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table-scroll {
+  max-width: 100%;
+  overflow: scroll;
+  max-height: 400px;
+  }
+
+table, th, td {
+  border: 1px solid black;
+  }
+  
+  table {
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 100%;
+  overflow: scroll;
+  }
+    
+  th, td{
+  padding: 10px;
+  text-align: center;
+  }
+  
+  th{
+  font-weight: bold;
+  }
+  
+  .thead {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-shadow: 0.5px 0.5px yellow;
+  }
+
+  tr:nth-child(even) {
+  background-color: #b1b4b497;
+  }
+  
+  .tbody:hover:nth-child(1n + 1 ) {
+  background-color: #fcfc67e9;
+  color: black;
+  text-shadow: 0.2em 0.2em rgb(255, 255, 255)
+  }
